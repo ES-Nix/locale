@@ -44,7 +44,7 @@ pkgs.dockerTools.buildImage {
 
     config.Entrypoint = [ "${pkgs.bashInteractive}/bin/bash" ];
 
-    # It gives me a  Permission denied error
+    # It gives me a Permission denied error
     #runAsRoot = ''
     #  #!${pkgs.stdenv.shell}
     #  mkdir --parent /lib/locale/
