@@ -5,7 +5,7 @@
 In this case you don't need to git clone, just have nix + flakes + podman:
 
 ```
-nix build github:ES-Nix/locale/d7f4070119227a440646f254b0c05ed6d108b57a#locale
+nix build github:ES-Nix/locale/cca8762305629192c00cf5794a3fe4243b68bb11#locale
 podman load < result
 podman \
 run \
@@ -22,7 +22,7 @@ COMMANDS
 echo 'Second build:'
 echo
 
-nix build github:ES-Nix/locale/28bce929a7a0fe7e08f119af25d4b53acbce0ee3#locale
+nix build github:ES-Nix/locale/a0021da8f34abe91a49971d2c046a650486f4364#locale
 podman load < result
 podman \
 run \
@@ -49,7 +49,7 @@ git clone https://github.com/ES-Nix/locale.git
 cd locale
 git checkout dev
 
-git checkout d7f4070119227a440646f254b0c05ed6d108b57a
+git checkout cca8762305629192c00cf5794a3fe4243b68bb11
 nix build .#locale
 podman load < result
 podman \
@@ -67,7 +67,7 @@ COMMANDS
 echo 'Second build:'
 echo
 
-git checkout 28bce929a7a0fe7e08f119af25d4b53acbce0ee3
+git checkout a0021da8f34abe91a49971d2c046a650486f4364
 nix build .#locale
 podman load < result
 podman \
