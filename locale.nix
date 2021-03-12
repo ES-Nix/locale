@@ -10,7 +10,7 @@ pkgs.dockerTools.buildImage {
         glibcLocales
 
         # All python variants makes glibcLocales paths disappear
-        #python3
+        python3
         #python38Full
         #python
         #python3Minimal
