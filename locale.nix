@@ -33,7 +33,12 @@ pkgs.dockerTools.buildImage {
         glibc
         glibcLocales
         #gzip
-        #python3
+
+        python3
+        #python38Full
+        #python
+        #python3Minimal
+
         #which
     ] ++ nonRootShadowSetup { uid = 999; gid = 888; user = "ada"; };
 
