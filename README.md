@@ -4,6 +4,15 @@
 
 In this case you don't need to git clone, just have nix + flakes + podman:
 
+```bash
+nix \
+flake \
+clone \
+'git+ssh://git@github.com/ES-Nix/locale.git' \
+--dest locale/
+```
+
+
 ```
 nix build github:ES-Nix/locale/cca8762305629192c00cf5794a3fe4243b68bb11#locale
 podman load < result
