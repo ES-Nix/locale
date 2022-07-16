@@ -9,7 +9,9 @@ nix \
 flake \
 clone \
 'git+ssh://git@github.com/ES-Nix/locale.git' \
---dest locale/
+--dest locale/ \
+&& cd locale \
+&& git checkout dev
 ```
 
 
